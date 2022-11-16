@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+<app-navbar></app-navbar>
+<head>
+	<title>Job Hunter</title>
+</head>
+<div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> Jobs deleted!.
+    <button (click)="removeMessage()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+</style>
+<br>
+<h1 class="header" class="text-secondary"> LIST OF JOBS AVAILABLE IN JOB HUNTER </h1>
+<br>
+<div align="center"><img src="assets/lady.gif" width="350" height="200"></div>
+<br>
+<!-- Table -->
+<table class="table table-hover" style="width:99%; position:center; margin-left: 7px; ">
+    <tbody >
+        <tr class="table-warning" style="color: black;">
+        <th>Id</th>
+        <th>Job title</th>
+        <th>Staff name</th>
+        <th>Company name</th>
+        <th>Staff email</th>
+        <th>Phone number </th>
+        <th>Company ssm</th>
+        <th>Delete</th>
+        <th>Edit</th>
+        </tr>
+        <!-- Calling data in table / report format -->
+        <tr *ngFor='let us of listData' class="table-light">
+
+            <td id="textcent" style="color:rgb(0, 0, 0) ; font-size: medium;">{{us.id}}</td>
+            <td style="color: rgb(0, 0, 0); font-size: medium; width: fit-content;">{{us.job_title}}</td>
+            <td style="color: rgb(0, 0, 0); font-size: medium; width: fit-content;">{{us.jstaff_name}}</td>
+            <td style="color: rgb(0, 0, 0); font-size: medium; width: fit-content;">{{us.jcomp_name}}</td>
+            <td style="color: rgb(0, 0, 0); font-size: medium; width: fit-content;">{{us.jstaff_email}}</td>
+            <td style="color: rgb(0, 0, 0); font-size: medium; width: fit-content;">{{us.jphone_num}}</td>
+            <td style="color: rgb(0, 0, 0); font-size: medium; width: fit-content;">{{us.comp_ssm}}</td>
+
+            <td >
+                <button (click)="deleteJob(us.id)" class="btn btn-outline-danger">Delete</button>
+            </td>
+            <td >
+                <a [routerLink]="['/edit-job',  us.id]"  routerLinkActive="router-link-active"><button class="btn btn-outline-warning">Edit</button></a>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+

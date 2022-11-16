@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+<br>
+<h2 class="text-center" class="head" style="font-family: Franklin Gothic Medium;">REGISTRATION</h2>
+<div class="body">
+    <div class="skills">
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <!-- Register form starts here-->
+              <form [formGroup]="registerForm" (ngSubmit)="postdata(registerForm)" autocomplete="off" class="login">
+               <!-- Insert staff name-->
+                <div class="login__field">
+                    <label for="staff_name">Name</label>
+
+                    <input class="login__input"   type="text" name="staff_name" formControlName="staff_name" autocomplete="off" class="form-control input-sm" placeholder="Name">
+                </div>
+                <!-- Insert staff email-->
+                <div class="login__field">
+                    <label for="staff_email">Email</label>
+                    <input class="login__input" type="email" name="staff_email" formControlName="staff_email" autocomplete="off" class="form-control input-sm" placeholder="Email">
+                </div>
+                <!-- Insert staff password-->
+                <div class="login__field">
+                    <label for="staff_password">Password</label>
+                    <input class="login__input" type="password" name="staff_password" formControlName="staff_password" autocomplete="off" class="form-control input-sm" placeholder="Password">
+                </div>
+                <!-- Insert staff phone num-->
+                <div class="login__field">
+                    <label for="staff_phonenum">Phone Number</label>
+                    <input class="login__input" type="text" name="staff_phonenum" formControlName="staff_phonenum" autocomplete="off" class="form-control input-sm" placeholder="Phone Number">
+                </div>
+                <!-- Insert company name-->
+                <div class="login__field">
+                    <label for="comp_name">Company Name</label>
+                    <input class="login__input" type="text" name="comp_name" formControlName="comp_name" autocomplete="off" class="form-control input-sm" placeholder="Company Name">
+                </div>
+                <!-- Insert company ssm num-->
+                <div class="login__field">
+                    <label for="comp_ssm">Company SSM</label>
+                    <input class="login__input" type="text" name="comp_ssm" formControlName="comp_ssm" autocomplete="off" class="form-control input-sm" placeholder="Company SSM">
+                </div>
+                <!-- Insert comp size-->
+                <div class="login__field">
+                    <label for="comp_size">Company Size</label>
+                    <input class="login__input" type="text" name="comp_size" formControlName="comp_size" autocomplete="off" class="form-control input-sm" placeholder="30-100 Employee/>100 Employee">
+                </div>
+                <!-- Insert comp type-->
+                <div class="login__field">
+                    <label for="comp_type">Company Type</label>
+                    <input class="login__input" type="text" name="comp_type" formControlName="comp_type" autocomplete="off" class="form-control input-sm" placeholder="Goverment/Recruitment agency">
+                </div>
+                <button type="submit" class="button login__submit"><span class="button__text">Register</span></button>
+               </form>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+</div>

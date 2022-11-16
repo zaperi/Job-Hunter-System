@@ -1,0 +1,45 @@
+<script>
+  function myFunction1()
+  {
+  alert("You have already logout!");
+  }
+  </script>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="['/main']" routerLinkActive="router-link-active">Job Hunter</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['/home']" routerLinkActive="router-link-active">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['/add-job']" routerLinkActive="router-link-active">Add jobs
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['/faq']" routerLinkActive="router-link-active">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['/about']" routerLinkActive="router-link-active">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['/developer']" routerLinkActive="router-link-active">Developer</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link active"  [routerLink]="['/login']" routerLinkActive="router-link-active" onclick="myFunction1()" value="Show alert box" >Logout</a>
+          </li>
+        </ul>
+        <audio src="assets/clover.mp3" type="audio/mp3" controls></audio>
+      </div>
+    </div>
+  </nav>

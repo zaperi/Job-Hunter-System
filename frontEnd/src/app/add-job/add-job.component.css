@@ -1,0 +1,58 @@
+.form-control{
+    width: 50%;
+    padding-left: 10%;
+}
+
+.text-warning{
+   color: black;
+    padding-right: 5%;
+}
+
+
+
+.forms
+{
+        width:80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid rgb(248, 206, 71);
+        border-radius: 4px;
+        background-color: rgb(235, 247, 148);
+        color: rgb(0, 0, 0);
+}
+
+th, td {
+    text-align: center;
+    padding: 2px;
+
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    position: center;
+    padding-left: 90%;
+  }
+  .center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+
+  label{
+    display: inline-block;
+    clear: left;
+    width: 200px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+
+}
+
+button {
+  width: 200px;
+  height: 60px;
+}

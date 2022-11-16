@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+<app-navbar></app-navbar>
+<div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> Jobs edited!.
+    <button (click)="removeMessage()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <br> <br>
+  <div align="center"><h2 class="head">EDIT JOB</h2></div>
+  <br>
+  <div align="center"><img src="assets/jobhunt.gif" width="350" height="200"></div>
+  <br>
+ <!-- Edit Form starts here-->
+  <div style="overflow-x: auto;" class="table" >
+  <form [formGroup]="editJob" (ngSubmit)="updateJobData()">
+
+    <!-- Job Title-->
+    <div class="mb-3">
+      <label class="text-info" ><b>Job title:</b></label>
+     <input type="text" class="mb-3" class="forms" placeholder="job title"  formControlName="job_title" >
+    </div>
+  <!-- Staff Name-->
+    <div class="mb-3">
+      <label class="text-info" ><b>Staff name:</b></label>
+     <input type="text" class="mb-3" class="forms" formControlName="jstaff_name" placeholder="Staff name">
+    </div>
+  <!-- Company Name-->
+    <div class="mb-3">
+        <label class="text-info"><b>Company name:</b></label>
+       <input type="text" class="mb-3" class="forms" formControlName="jcomp_name" placeholder="Company name">
+    </div>
+<!-- Staff Email-->
+    <div class="mb-3">
+       <label class="text-info"><b>Staff email:</b></label>
+       <input type="text" class="mb-3" class="forms" formControlName="jstaff_email" placeholder="Staff email">
+    </div>
+<!-- Phone Number-->
+    <div class="mb-3">
+       <label class="text-info"><b>Phone number:</b></label>
+      <input type="text" class="mb-3" class="forms" formControlName="jphone_num" placeholder="Phone number">
+    </div>
+<!-- Company SSM-->
+    <div class="mb-3">
+        <label class="text-info"><b>Company SSM:</b></label>
+         <input type="text" class="mb-3" class="forms" formControlName="comp_ssm" placeholder="Company SSM">
+    </div>
+<!-- Button-->
+    <div class="mb-3">
+      <button type="submit" class="btn btn-outline-light">Submit</button>
+    </div>
+
+  </form>
+</div>

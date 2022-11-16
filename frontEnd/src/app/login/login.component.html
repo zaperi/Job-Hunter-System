@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+<head>
+	<title>Job Hunter</title>
+</head>
+<div class="demo-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12 mx-auto">
+        <div class="text-center image-size-small position-relative">
+        <img src="assets/lib.png" class="rounded-circle p-2 bg-white">
+
+        </div>
+        <div class="p-5 bg-white rounded shadow-lg">
+          <h3 class="mb-2 text-center pt-5">Sign In</h3>
+          <p class="text-center lead">Sign In to manage all your devices</p>
+
+          <form class="login" [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+            <!--Email-->
+            <div class="login__field">
+            <i class="login__icon fas fa-user" for="staff_email"></i>
+            </div>
+
+            <label class="font-500">Email</label>
+            <input type="email" name="staff_email" class="form-control form-control-lg mb-3"  formControlName="staff_email" autocomplete="off"  placeholder="Staff Email">
+
+            <!--Password-->
+            <div class="login__field">
+              <i class="login__icon fas fa-lock" for="staff_password"></i>
+
+             <label class="font-500">Password</label>
+            <input type="password" name="staff_password" class="form-control form-control-lg" formControlName="staff_password" autocomplete="off" placeholder="Password" >
+            </div>
+            <br>
+
+            <!--Button-->
+            <button class="btn btn-primary btn-lg w-100 shadow-lg"  type="submit">
+              <span class="button__text">SIGN IN</span>
+
+            </button>
+
+          </form>
+         <div class="text-center pt-4">
+          <p class="m-0">Do not have an account? <a href="/register" class="text-dark font-weight-bold">Sign Up</a></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

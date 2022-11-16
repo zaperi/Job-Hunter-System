@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+<app-navbar></app-navbar>
+
+<br> <br>
+<div align="center"><h2 class="head">ADD NEW JOB</h2></div>
+<br>
+<div align="center"><img src="assets/jobhunt.gif" width="350" height="200"></div>
+<br>
+  <!-- Add Job Form starts here-->
+  <form [formGroup]="addJob" (ngSubmit)="createJob()">
+    <!-- Job Title-->
+    <div class="mb-3">
+      <label class="text-warning"><b>Job title:</b></label>
+      <input type="text" class="mb-3" class="forms" placeholder="Job title...." formControlName="job_title" size="50">
+    </div>
+  <!-- Staff name-->
+    <div class="mb-3">
+      <label class="text-warning"><b>Staff name:</b></label>
+      <input type="text" class="mb-3" class="forms" formControlName="jstaff_name" placeholder="Staff Name....">
+    </div>
+  <!-- Company name-->
+    <div class="mb-3">
+        <label class="text-warning"><b>Company name:</b></label>
+        <input type="text" class="mb-3" class="forms" formControlName="jcomp_name" placeholder="Company Name....">
+    </div>
+<!-- Staff Email-->
+    <div class="mb-3">
+        <label class="text-warning"><b>Staff email:</b></label>
+        <input type="text" class="mb-3" class="forms" formControlName="jstaff_email" placeholder="Staff email....">
+    </div>
+<!-- Phone Number-->
+    <div class="mb-3">
+        <label class="text-warning"><b>Phone number:</b></label>
+        <input type="text" class="mb-3" class="forms" formControlName="jphone_num" placeholder="Phone number....">
+    </div>
+<!-- Company SSM-->
+    <div class="mb-3">
+        <label class="text-warning"><b>Company SSM:</b></label>
+        <input type="text" class="mb-3" class="forms" formControlName="comp_ssm" placeholder="Company SSM....">
+    </div>
+
+
+<!-- Button Submit-->
+    <div class="mb-3">
+      <button type="submit" class="btn btn-outline-warning">Submit</button>
+    </div>
+  </form>

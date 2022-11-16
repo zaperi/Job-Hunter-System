@@ -1,0 +1,57 @@
+{
+ "comps": [
+  {
+    "id": 1,
+    "staff_name": "lana",
+    "staff_email": "aiman_lana@gmail.com",
+    "staff_password": "aimanlana",
+    "staff_phonenum": "01876529048",
+    "comp_name": "KUPTM",
+    "comp_ssm": "567",
+    "comp_size": "<150",
+    "comp_type": "Government"
+   }
+ ],
+
+ "jobs":[
+     {
+        "id": 7,
+        "job_title": "IT analyst",
+        "jstaff_name": "akhdaO",
+        "jcomp_name": "PETRONAS",
+        "jstaff_email": "akjdso",
+        "jphone_num": "01283927",
+        "comp_ssm": "590"
+     },
+
+     {
+        "id": 8,
+        "job_title": "IT MANAGER",
+        "jstaff_name": "aksjakd",
+        "jcomp_name": "Petronas",
+        "jstaff_email": "perejf@gmail.com",
+        "jphone_num": "10293829",
+        "comp_ssm": "590"
+     },
+
+     {
+        "id": 9,
+        "job_title": "Accountant",
+        "jstaff_name": "Siti",
+        "jcomp_name": "KUPTM",
+        "jstaff_email": "siti@kuptm.com",
+        "jphone_num": "0128324729",
+        "comp_ssm": "111"
+     },
+
+     {
+        "id": 10,
+        "job_title": "Technical",
+        "jstaff_name": "Muammar",
+        "jcomp_name": "MegahHolding",
+        "jstaff_email": "muammar@megahholding.com",
+        "jphone_num": "0129389473",
+        "comp_ssm": "789"
+     }
+ ]
+}
